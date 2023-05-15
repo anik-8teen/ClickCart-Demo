@@ -6,11 +6,13 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace ClickCart.Controllers
 {
     public class AuthController : ApiController
     {
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [HttpPost]
         [Route("api/login")]
         public HttpResponseMessage Login(LoginModel login)

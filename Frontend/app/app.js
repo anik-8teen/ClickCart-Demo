@@ -6,9 +6,9 @@ app.config(["$routeProvider", "$locationProvider", function ($routeProvider, $lo
         .when("/", {
             templateUrl: "views/pages/home.html",
         })
-        .when("/trips", {
-            templateUrl: "views/pages/trips.html",
-            controller: 'trips'
+        .when("/pdf", {
+            templateUrl: "views/pages/pdf.html",
+            controller: 'pdf'
         })
         .when("/packages", {
             templateUrl: "views/pages/packages.html",

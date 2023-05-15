@@ -7,11 +7,13 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace ClickCart.Controllers
 {
     public class UserController : ApiController
     {
+        [EnableCors(origins: "*", headers: "*", methods: "*")]
         [HttpGet]
         [Route("api/alluser")]
         public HttpResponseMessage Users()

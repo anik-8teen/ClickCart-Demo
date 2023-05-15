@@ -71,6 +71,7 @@
     <Compile Include="Models\OrderDetail.cs" />
     <Compile Include="Models\PaymentDetail.cs" />
     <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\PushNotification.cs" />
     <Compile Include="Models\Review.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Supplier.cs" />

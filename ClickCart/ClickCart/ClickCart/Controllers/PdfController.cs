@@ -45,7 +45,7 @@ namespace API.Controllers
                 var mapPath = HostingEnvironment.MapPath("~\\PDF\\");
                 var filename = product.Name + "_" + DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
                 var pdfPath = mapPath + filename + ".pdf";
-                var serverPdfPath = "https://localhost:44359/PDF/" + filename + ".pdf";
+                var serverPdfPath = "https://localhost:44366/PDF/" + filename + ".pdf";
 
                 CreatePdf("https://localhost:44359", html, pdfPath);
 
